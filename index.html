@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Vacaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Solicitud de Vacaciones</h1>
+    <form id="vacationForm">
+        <label for="employeeName">Nombre del Empleado:</label>
+        <input type="text" id="employeeName" required>
+
+        <label for="daysRequested">Días Solicitados:</label>
+        <select id="daysRequested" required>
+            <option value="" disabled selected>Seleccione días</option>
+            <script>
+                for (let i = 1; i <= 28; i++) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>
+        </select>
+
+        <label for="startDate">Fecha de Inicio:</label>
+        <input type="date" id="startDate" required>
+
+        <label for="endDate">Fecha de Fin:</label>
+        <input type="date" id="endDate" required>
+
+        <button type="submit">Enviar Solicitud</button>
+ </form>
+    <div id="responseMessage"></div>
+    <script src="script.js"></script>
+</body>
+</html>
