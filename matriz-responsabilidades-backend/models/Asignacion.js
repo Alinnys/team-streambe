@@ -39,8 +39,7 @@ allowNull: false,
 estado: {
 type: DataTypes.ENUM('Pendiente', 'En Progreso', 'Completada'),
 allowNull: false,
-defaultValue: 'Pendiente', // Estado por defecto es
-'Pendiente'
+defaultValue: 'Pendiente', // Estado por defecto es 'Pendiente'
 },
 }, {
 tableName: 'asignacion', // Nombre de la tabla en la base de datos

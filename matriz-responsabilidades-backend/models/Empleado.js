@@ -3,7 +3,6 @@ const sequelize = require('../database'); // Asegúrate de que la conexión sea 
 const Usuario = require('./Usuario'); // Importar el modelo de Usuario
 // Definir el modelo Empleado, sincronizando con la tabla existente
 const Empleado = sequelize.define('Empleado', {
-
 id_empleado: {
 type: DataTypes.INTEGER,
 primaryKey: true,
